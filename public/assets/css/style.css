@@ -55,9 +55,13 @@ h1, h2, h3 { line-height: 1.08; }
 .site-header.is-scrolled { height: 68px; border-color: var(--line); box-shadow: 0 8px 30px rgba(61, 41, 28, .05); }
 .header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-size: 26px; font-weight: 700; letter-spacing: -.6px; }
+.brand-logo { width: auto; height: 46px; display: block; object-fit: contain; }
+.site-header.is-scrolled .brand-logo { height: 42px; }
+.brand-light .brand-logo { height: 50px; }
 .brand em { color: var(--terracotta); font-style: normal; }
 .brand-mark { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50% 50% 44% 56%; color: var(--cream); background: var(--terracotta); transform: rotate(-4deg); }
 .brand-mark .icon { width: 23px; height: 23px; transform: rotate(4deg); }
+.brand-mark img { width: 100%; height: 100%; display: block; border-radius: inherit; object-fit: cover; transform: rotate(4deg) scale(1.08); }
 .brand-mark.big { width: 58px; height: 58px; margin-bottom: 18px; }
 .main-nav { display: flex; align-items: center; gap: 30px; font-size: 15px; font-weight: 650; }
 .main-nav > a:not(.button) { position: relative; }
@@ -180,7 +184,7 @@ h1, h2, h3 { line-height: 1.08; }
 }
 
 @media (max-width: 720px) {
-    body { padding-bottom: 72px; font-size: 16px; }.shell { width: min(100% - 28px, 1180px); }.site-header { height: 68px; }.brand { font-size: 23px; }.brand-mark { width: 36px; height: 36px; }.nav-toggle { width: 48px; height: 48px; display: grid; place-items: center; }.main-nav { left: 14px; right: 14px; padding: 12px; }.main-nav > a { min-height: 49px; display: flex; align-items: center; font-size: 16px; }
+    body { padding-bottom: 72px; font-size: 16px; }.shell { width: min(100% - 28px, 1180px); }.site-header { height: 68px; }.brand { font-size: 23px; }.brand-logo { height: 42px; }.site-header.is-scrolled .brand-logo { height: 39px; }.brand-light .brand-logo { height: 47px; }.brand-mark { width: 36px; height: 36px; }.nav-toggle { width: 48px; height: 48px; display: grid; place-items: center; }.main-nav { left: 14px; right: 14px; padding: 12px; }.main-nav > a { min-height: 49px; display: flex; align-items: center; font-size: 16px; }
     .hero-copy { padding-top: 55px; }.hero-copy h1 { font-size: 50px; letter-spacing: -2px; }.hero-copy > p { font-size: 16px; line-height: 1.65; }.hero-search { height: auto; min-height: 62px; padding-left: 16px; }.hero-search input { font-size: 16px; }.hero-search button { height: 50px; padding-inline: 17px; font-size: 14px; }.hero-visual { height: 440px; }.hero-photo-frame { inset: 15px 0 35px; border-width: 6px; }.note-one { top: 4px; right: 0; }.note-two { bottom: 25px; left: -2px; }.handwritten { bottom: 1px; right: 14px; }
     .sponsor-carousel { margin-top: 40px; }.sponsor-slide { grid-template-columns: 1fr; padding: 30px 25px 45px; }.sponsor-slide img, .sponsor-art { height: 180px; grid-row: 1; }.carousel-dots { left: 25px; bottom: 18px; }.brand-strip > div { gap: 20px; }
     .recipe-section { padding: 75px 0; }.section-heading { display: block; }.section-heading h2 { font-size: 43px; }.section-heading > p { margin-top: 18px; }.recipe-grid, .recipe-grid-three { grid-template-columns: 1fr; }.recipe-card-media { height: 260px; }.share-cta-inner, .share-recipe { display: block; }.share-cta h2 { font-size: 42px; }.share-cta .button { margin-top: 25px; }.supporters-inner { display: block; padding-block: 25px; }.supporter-logos { margin-top: 18px; overflow-x: auto; }.footer-grid { grid-template-columns: 1fr; gap: 35px; }.footer-bottom { display: grid; gap: 6px; }

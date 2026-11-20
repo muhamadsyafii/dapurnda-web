@@ -55,7 +55,7 @@ function render_admin_sidebar(string $active, array $badges = []): void
 <aside class="admin-sidebar" aria-label="Navigasi pengelola">
     <div class="admin-sidebar-inner">
         <a class="admin-brand" href="<?= e(url('admin/index.php')) ?>" aria-label="Dashboard DapurNda">
-            <span class="brand-mark"><?= icon('chef') ?></span>
+            <span class="brand-mark"><img src="<?= e(asset('images/mark-dapurnda.png')) ?>" alt="" width="512" height="512"></span>
             <span><strong>DapurNda</strong><small>Area pengelola</small></span>
         </a>
         <a class="admin-view-site" href="<?= e(url()) ?>" target="_blank" rel="noopener"><?= icon('external-link') ?><span>Lihat website</span></a>
@@ -96,7 +96,7 @@ function render_header(array $meta = [], string $bodyClass = ''): void
     $defaults = [
         'title' => 'DapurNda — Resep yang Selalu Ingin Dimasak Lagi',
         'description' => 'Temukan resep rumahan pilihan, bagikan kreasi dapurmu, dan masak makanan penuh cerita bersama DapurNda.',
-        'image' => url('assets/images/og-cover.jpg'),
+        'image' => url('assets/images/og-cover-v2.jpg'),
         'url' => current_url(),
         'type' => 'website',
         'image_width' => 1200,
@@ -134,7 +134,8 @@ function render_header(array $meta = [], string $bodyClass = ''): void
     <meta name="twitter:description" content="<?= e($meta['description']) ?>">
     <meta name="twitter:image" content="<?= e($meta['image']) ?>">
     <meta name="theme-color" content="#f7efe3">
-    <link rel="icon" href="<?= e(asset('images/favicon.svg')) ?>" type="image/svg+xml">
+    <link rel="icon" href="<?= e(asset('images/favicon-64.png')) ?>" type="image/png" sizes="64x64">
+    <link rel="apple-touch-icon" href="<?= e(asset('images/apple-touch-icon.png')) ?>" sizes="180x180">
     <link rel="preload" href="<?= e(asset('fonts/plus-jakarta-sans-variable.woff2')) ?>" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="<?= e(asset('fonts/fraunces-variable.woff2')) ?>" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="<?= e(asset('css/style.css')) ?>">
@@ -148,8 +149,7 @@ function render_header(array $meta = [], string $bodyClass = ''): void
 <header class="site-header" data-header>
     <div class="shell header-inner">
         <a class="brand" href="<?= e(url()) ?>" aria-label="DapurNda, kembali ke beranda">
-            <span class="brand-mark"><?= icon('chef') ?></span>
-            <span>Dapur<em>Nda</em></span>
+            <img class="brand-logo" src="<?= e(asset('images/logo-dapurnda.png')) ?>" alt="" width="422" height="128">
         </a>
         <button class="nav-toggle" type="button" data-nav-toggle aria-label="Buka menu" aria-expanded="false"><?= icon('menu') ?></button>
         <nav class="main-nav" data-nav aria-label="Navigasi utama">
@@ -197,7 +197,7 @@ function render_footer(array $options = []): void
     <?php endif; ?>
     <div class="shell footer-grid">
         <div>
-            <a class="brand brand-light" href="<?= e(url()) ?>"><span class="brand-mark"><?= icon('chef') ?></span><span>Dapur<em>Nda</em></span></a>
+            <a class="brand brand-light" href="<?= e(url()) ?>" aria-label="DapurNda, kembali ke beranda"><img class="brand-logo" src="<?= e(asset('images/logo-dapurnda-light.png')) ?>" alt="" width="422" height="128" loading="lazy"></a>
             <p>Panduan masak rumahan yang jelas, hangat, dan mudah diikuti bahkan saat baru pertama masuk dapur.</p>
         </div>
         <div class="footer-links"><h2>Informasi</h2><a href="<?= e(url('about.php')) ?>">Tentang kami</a><a href="<?= e(url('privacy.php')) ?>">Privasi</a><a href="<?= e(url('terms.php')) ?>">Ketentuan</a><a href="mailto:halo@dapurnda.id">Kontak</a><a href="<?= e(url('admin/index.php')) ?>">Area pengelola</a></div>
