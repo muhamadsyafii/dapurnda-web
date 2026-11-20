@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8f1e7"/><stop offset="1" stop-color="#eadbc6"/></linearGradient>
+    <radialGradient id="food" cx=".35" cy=".3"><stop stop-color="#f2b958"/><stop offset=".5" stop-color="#d87838"/><stop offset="1" stop-color="#a43f2a"/></radialGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#56321f" flood-opacity=".22"/></filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1100" cy="40" r="190" fill="#d7c5a7" opacity=".45"/><circle cx="590" cy="660" r="170" fill="#d9aa8d" opacity=".3"/>
+  <g transform="translate(72 72)">
+    <rect width="52" height="52" rx="18" fill="#c85535"/>
+    <path d="M13 25c-4-1-4-7 0-9 2-1 4 0 5 1 1-5 7-7 11-4 2 1 2 3 2 4 5-2 9 1 9 5 0 4-3 6-6 6H15c-1 0-2-1-2-3Zm4 3v13h18V28M21 35h10" fill="none" stroke="#fff8ef" stroke-width="3" stroke-linecap="round"/>
+    <text x="68" y="38" font-family="Georgia,serif" font-size="35" font-weight="700" fill="#29231f">Dapur</text>
+    <text x="166" y="38" font-family="Georgia,serif" font-size="35" font-weight="700" fill="#c85535">Nda</text>
+  </g>
+  <g transform="translate(72 190)">
+    <text font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="3" fill="#c85535">RESEP PILIHAN · CERITA RUMAHAN</text>
+    <text y="85" font-family="Georgia,serif" font-size="72" fill="#29231f">Masak enak,</text>
+    <text y="163" font-family="Georgia,serif" font-size="72" font-style="italic" fill="#c85535">hidup lebih hangat.</text>
+    <text y="221" font-family="Arial,sans-serif" font-size="22" fill="#716861">Resep yang mudah diikuti, penuh rasa,</text>
+    <text y="252" font-family="Arial,sans-serif" font-size="22" fill="#716861">dan layak dimasak berulang kali.</text>
+  </g>
+  <g transform="translate(840 320) rotate(-8)" filter="url(#shadow)">
+    <circle r="210" fill="#fefdf9"/><circle r="168" fill="#e6d7b9"/>
+    <path d="M-102-52c38-70 137-72 182-15 50 62 6 161-74 168-89 8-152-79-108-153Z" fill="url(#food)"/>
+    <ellipse cx="-47" cy="-25" rx="20" ry="12" fill="#66844d" transform="rotate(24)"/><ellipse cx="56" cy="-46" rx="31" ry="14" fill="#345d45" transform="rotate(-28)"/><circle cx="52" cy="48" r="18" fill="#e7c65f"/><circle cx="-22" cy="61" r="12" fill="#f2e3a4"/>
+  </g>
+</svg>

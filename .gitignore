@@ -1,0 +1,10 @@
+/config/config.local.php
+/storage/logs/*.log
+/public/uploads/recipes/*
+/public/uploads/sponsors/*
+!/public/uploads/.htaccess
+!/public/uploads/recipes/.gitkeep
+!/public/uploads/sponsors/.gitkeep
+/.idea/
+/.vscode/
+*.zip

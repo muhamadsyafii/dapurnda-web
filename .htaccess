@@ -1,0 +1,8 @@
+Options -Indexes
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(?:config|src|database|storage)(?:/|$) - [F,L,NC]
+    RewriteRule \.(?:sql|md|log|env|ini|bak)$ - [F,L,NC]
+</IfModule>
