@@ -1,10 +1,63 @@
+# ------------------------------------------------------------
+# DapurNda - file lokal dan rahasia
+# ------------------------------------------------------------
+/.env
+/.env.*
+!/.env.example
 /config/config.local.php
-/storage/logs/*.log
+/config/config.production.php
+
+# ------------------------------------------------------------
+# Data runtime
+# ------------------------------------------------------------
+/storage/logs/*
+!/storage/logs/.gitkeep
+/storage/cache/*
+!/storage/cache/.gitkeep
+/storage/tmp/*
+!/storage/tmp/.gitkeep
+/storage/sessions/*
+!/storage/sessions/.gitkeep
+
+# Upload pengguna tidak disimpan di Git.
 /public/uploads/recipes/*
 /public/uploads/sponsors/*
 !/public/uploads/.htaccess
 !/public/uploads/recipes/.gitkeep
 !/public/uploads/sponsors/.gitkeep
+
+# ------------------------------------------------------------
+# Dependency dan hasil pengujian lokal
+# ------------------------------------------------------------
+/vendor/
+/node_modules/
+/.phpunit.cache/
+/.phpunit.result.cache
+/coverage/
+
+# ------------------------------------------------------------
+# Editor dan sistem operasi
+# ------------------------------------------------------------
 /.idea/
 /.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------
+# Arsip dan file sementara
+# ------------------------------------------------------------
 *.zip
+*.tar
+*.tgz
+*.tmp
+*.temp
+*.bak
+
+# Folder database dan seluruh file SQL sengaja TIDAK diabaikan.
+# Schema, migrasi, dan data contoh aman untuk ikut private repository.
+!/database/
+!/database/**/*.sql

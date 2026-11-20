@@ -34,8 +34,7 @@ if (!is_admin()) {
                     <div class="card-body">
                         <div class="app-brand justify-content-center mb-6">
                             <a href="<?= e(url()) ?>" class="app-brand-link gap-2">
-                                <span class="dapurnda-brand-mark"><?= icon('chef') ?></span>
-                                <span class="app-brand-text text-heading fw-bold">Dapur<span>Nda</span></span>
+                                <img class="dapurnda-login-logo" src="<?= e(asset('images/logo-dapurnda.png')) ?>" alt="DapurNda" width="422" height="128">
                             </a>
                         </div>
                         <span class="dapurnda-auth-kicker"><?= $needsSetup ? 'Setup satu kali' : 'Area pengelola' ?></span>

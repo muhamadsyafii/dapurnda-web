@@ -21,7 +21,7 @@ $related = array_values(array_filter(search_recipes('', $recipe['category_slug']
 $detailSponsors = config('features.public_sponsors', false) ? active_sponsors('detail') : [];
 record_sponsor_impressions($detailSponsors);
 $recipeUrl = url('recipe.php', ['slug' => $recipe['slug']]);
-$imageUrl = recipe_photo_url($recipe['photo_filename']) ?: url('assets/images/og-cover.jpg');
+$imageUrl = recipe_photo_url($recipe['photo_filename']) ?: url('assets/images/og-cover-v2.jpg');
 $imageDimensions = recipe_photo_dimensions($recipe['photo_filename']);
 $jsonLd = [
     '@context' => 'https://schema.org', '@type' => 'Recipe', 'name' => $recipe['title'],

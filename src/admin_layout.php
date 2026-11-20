@@ -20,7 +20,8 @@ function render_admin_document_head(string $title, bool $auth = false): void
     <meta name="description" content="Area pengelola DapurNda">
     <meta name="robots" content="noindex,nofollow">
     <meta name="theme-color" content="#c85535">
-    <link rel="icon" href="<?= e(asset('images/favicon.svg')) ?>" type="image/svg+xml">
+    <link rel="icon" href="<?= e(asset('images/favicon-64.png')) ?>" type="image/png" sizes="64x64">
+    <link rel="apple-touch-icon" href="<?= e(asset('images/apple-touch-icon.png')) ?>" sizes="180x180">
     <link rel="preload" href="<?= e(asset('admin/fonts/public-sans-variable.woff2')) ?>" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="<?= e(asset('admin/vendor/fonts/iconify-icons.css')) ?>">
     <link rel="stylesheet" href="<?= e(asset('admin/vendor/css/core.css')) ?>">
@@ -53,7 +54,7 @@ function render_admin_page_start(string $title, string $active, array $badges = 
         <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
             <div class="app-brand dapurnda-app-brand">
                 <a href="<?= e(url('admin/index.php')) ?>" class="app-brand-link">
-                    <span class="dapurnda-brand-mark"><?= icon('chef') ?></span>
+                    <span class="dapurnda-brand-mark"><img src="<?= e(asset('images/mark-dapurnda.png')) ?>" alt="" width="512" height="512"></span>
                     <span class="app-brand-text menu-text fw-bold ms-2">Dapur<span>Nda</span></span>
                 </a>
                 <button type="button" class="layout-menu-toggle dapurnda-menu-close ms-auto d-xl-none" aria-label="Tutup menu">
@@ -127,7 +128,7 @@ function render_admin_page_end(): void
     ?>
                 <footer class="content-footer footer bg-footer-theme dapurnda-admin-footer">
                     <div class="container-xxl dapurnda-footer-inner">
-                        <div class="dapurnda-footer-brand"><span class="dapurnda-footer-mark"><?= icon('chef') ?></span><span><strong>DapurNda</strong><small>Panel pengelola</small></span></div>
+                        <div class="dapurnda-footer-brand"><span class="dapurnda-footer-mark"><img src="<?= e(asset('images/mark-dapurnda.png')) ?>" alt="" width="512" height="512" loading="lazy"></span><span><strong>DapurNda</strong><small>Panel pengelola</small></span></div>
                         <div class="dapurnda-footer-meta"><span class="dapurnda-system-ready"><i></i>Sistem siap</span><span>© <?= date('Y') ?></span></div>
                     </div>
                 </footer>
